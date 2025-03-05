@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+@font-face {
+    font-family: monogram;
+    src: url("/monogram.ttf");
+  }

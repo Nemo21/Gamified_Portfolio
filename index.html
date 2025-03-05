@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Vite App</title>
+  </head>
+  <body class="font-[monogram] text-[2rem] overflow-hidden">
+    <div id="app" class="size-full relative">
+      <div id="ui">
+        <p
+          class="note absolute left-[5%] top-[1vh] flex flex-col text-[rgb(238,238,238)] select-none"
+        >
+          Tap/Click to move around
+        </p>
+        <div id="textbox-container" class="hidden">
+          <div
+            id="textbox"
+            class="absolute left-[10%] right-[10%] bottom-[2vh] min-h-[10vh] bg-white rounded-[3px] outline-solid p-[1rem] flex flex-col flex-wrap justify-start items-start tracking-[0.2rem] drop-shadow-[0 0 0.75rem rgb(112,112,112)]"
+          >
+            <p id="dialogue" class="m-[0] select-none text-[black]">
+              Some dialogue
+            </p>
+            <div class="btn-container self-end mt-[1rem]">
+              <button
+                id="close"
+                class="font-[monogram] border-none rounded-[3px] p-[1rem] text-[black]"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas id="game"></canvas>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
